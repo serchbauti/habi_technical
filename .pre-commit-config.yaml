@@ -1,0 +1,40 @@
+repos:
+-   repo: https://github.com/asottile/reorder_python_imports
+    rev: v2.5.0
+    hooks:
+    -   id: reorder-python-imports
+        args: [
+            '--application-directories=.:app'
+        ]
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.2
+    hooks:
+    -   id: flake8
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+    -   id: check-ast
+    -   id: check-added-large-files
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: fix-encoding-pragma
+        args: [
+            '--remove'
+        ]
+    -   id: detect-private-key
+    -   id: check-yaml
+    -   id: no-commit-to-branch
+    -   id: requirements-txt-fixer
+-   repo: https://github.com/psf/black
+    rev: 21.6b0
+    hooks:
+    -   id: black
+-   repo: local
+    hooks:
+    -   id: test
+        name: test
+        entry: make
+        args: ["tests"]
+        language: system
+        types: [python]
+        pass_filenames: false
