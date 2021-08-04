@@ -1,1 +1,1 @@
-web:gunicorn habi.wsgi --log-file -
+web:gunicorn habi.wsgi
