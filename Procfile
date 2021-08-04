@@ -1,1 +1,1 @@
-web:gunicorn habi.wsgi
+web: gunicorn habi.wsgi
