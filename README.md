@@ -9,7 +9,7 @@
 
 This technical test was worked with django and django rest framework this two is based in python languaje to develop projects easy and fast, in this case consider django is a good idea to complete all topics in the test specially in the develop of rest api with django rest framework.
 
-In first use django in this case to connect with the database (Mysql) for manage the info made a mirror of the db and contruct three basic models, Properties, Status and Status_history that save the info of database habi.
+In first use django in this case to connect with the database (Mysql) for manage the info made a mirror of the db and construct three basic models, Properties, Status and Status_history that save the info of database habi.
 
 In second with django rest framework create the serialzers and views neccesarys to create the endpoint requested in the test.
 
@@ -55,9 +55,9 @@ class Like(models.Model):
 ```
 
 where:
-- `user` is the relation with the user that give click in th buton like
+- `user` is the relation with the user that give click in the like button
 - `property` is the relation with a property
-- `created` is the timestamp that user click in button like
+- `created` is the timestamp that user click in the like button
 
 ## ER diagram
 ![plot](./img/like.png)
